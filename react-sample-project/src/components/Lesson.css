@@ -1,0 +1,73 @@
+.lesson-card {
+    width: 33%;
+    margin-right: 24px;
+    text-align: center;
+    box-shadow: 0 0 6px #e8e8e8;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 767px){
+    .lesson-card{
+      width:100%;
+      margin-bottom: 20px;
+    }
+  }
+  .lesson-item {
+    border-radius: 4px;
+    padding: 48px 0 40px;
+  }
+  
+  .lesson-item img {
+    width: 126px;
+    height:350px;
+  }
+  @media screen and (max-width: 767px){
+    .lesson-item img {
+  
+      height:200px;
+    }
+  }
+  
+  .lesson-item p{
+    color: #2b546a;
+  
+    }
+  
+  .main {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 96px 0;
+  }
+  
+  .lesson-container {
+    margin-top: 96px;
+  }
+  .lesson-container h3{
+    font-size:25px;
+  }
+  .lesson-items{
+    display: flex;
+  }
+  @media screen and (max-width: 767px){
+    .lesson-items{
+      display: block;
+    }
+  }
+  .text-center{
+    text-align:center;
+  }
+  .lesson-item a {
+    color: #333;
+    text-decoration: none;
+    /* background: rgba(62, 161, 209, 0.7); */
+    height: 50px;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 10px;
+    border:1px solid rgba(62, 161, 209, 0.7)
+  }
+  .lesson-item a:hover{
+    opacity: 0.5;
+  }
