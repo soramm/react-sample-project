@@ -6,7 +6,7 @@ const Skill = (props) => {
     return (
         <>
                 <div className="skillitem">
-                <img src={props.img} /> 
+                <i class={props.img}></i>
                 </div>
             </>
     )

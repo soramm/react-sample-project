@@ -13,12 +13,23 @@ const StyleAbout = styled.div`
     h2{
         text-align:center;
     }
+    @media screen and (max-width: 767px){
+        .about-container{
+            display:block;
+        }
+        .about-img img{
+            width:50%;
+        }
+        .about-img{
+            text-align:center;
+        }
+    }
 `;
 
 function About() {
     return (
         <>
-        <StyleAbout>
+        <StyleAbout id="about">
                 <h2>About 
                 </h2>
             <div className="about-container">

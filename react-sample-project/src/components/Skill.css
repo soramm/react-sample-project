@@ -9,10 +9,18 @@
 .skillitem{
 
     width:33%;
+    text-align:center;
+    margin :30px 0;
 }
 .skillitem img{
     width:60%;
 }
 .skill-container{
     margin-top: 100px;
+}
+@media screen and (max-width: 767px){
+
+    .skillitem{
+        width:40%;
+    }
 }

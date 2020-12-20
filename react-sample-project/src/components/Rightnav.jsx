@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 // import { Link } from 'react-router-dom';
 import { Route, Link } from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+
+
+
 const StyleRightnav = styled.div`
 list-style: none;
 display: flex;
@@ -29,7 +34,7 @@ a{
     position: fixed;
     color:#fff;
     /* state(open) の真偽によりスタイルを切り替える */
-    transform: ${({ open }) => open ? 'translateX(0%)' : 'translateX(100%)'};
+    transform: ${({ open }) => open ? 'translateX(00%)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
@@ -50,10 +55,10 @@ a{
         <StyleRightnav>
         <div className="navbar">
        <ul open={open}>
-              <li><Link to='/'>HOME</Link></li>
-              <li><Link to='/About'>ABOUT</Link></li>
-              <li><Link to='./Lesson'>PRODUCTS</Link></li>
-              <li><Link to='./Skill'>SKILL</Link></li>
+              <li><AnchorLink href='/'>HOME</AnchorLink></li>
+              <li><AnchorLink href='#about'>ABOUT</AnchorLink></li>
+              <li><AnchorLink href='#lesson'>PRODUCTS</AnchorLink></li>
+              <li><AnchorLink href='#skill'>SKILL</AnchorLink></li>
         </ul>  
         </div>
         <Route path="/" />

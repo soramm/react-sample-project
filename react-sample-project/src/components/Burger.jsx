@@ -16,6 +16,7 @@ const StyleBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    position:fixed;
   }
   div {
     width: 2rem;
